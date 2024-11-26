@@ -244,6 +244,8 @@ body::-webkit-scrollbar {
     }
     
     .logo {
+        position: relative;
+        left: 10px;
         color: #000000;
         pointer-events: none;
         margin-right: 10px;
@@ -257,14 +259,13 @@ body::-webkit-scrollbar {
     
     .navigation a {
         position: relative;
-        right: 10px;
+        right: 0;
         text-decoration: none;
         color: #ffffff;
         padding: 10px 15px;
         border-radius: 20px;
         font-weight: 600;
         transition: background-color 0.3s ease;
-        
     }
     
     .navigation a:hover 
@@ -273,7 +274,11 @@ body::-webkit-scrollbar {
         color: #fff;
     }
     
-    
+    .judul {
+        position: relative;
+        top: 230px;
+        font-size: 1em;
+    }
     
     /* Section Content */
     .container-content {
@@ -322,7 +327,7 @@ body::-webkit-scrollbar {
     }
     
     .judul h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         color: #333;
         margin-bottom: 20px;
     }
@@ -378,7 +383,7 @@ body::-webkit-scrollbar {
         justify-content: center;
         position: relative;
         left: 45px;
-        top: 80px;
+        top: 150px;
         
     }
     .box{

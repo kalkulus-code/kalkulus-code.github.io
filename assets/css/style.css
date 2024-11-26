@@ -249,7 +249,13 @@ section .wave.wave4 {
         overflow-x: hidden;
         overflow-y: hidden;
         line-height: 1.5;
+        overflow-y: scroll;
     }
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+    
     
     header {
         position: absolute;
@@ -266,6 +272,8 @@ section .wave.wave4 {
     }
     
     .logo {
+        position: relative;
+        left: 10px;
         color: #000000;
         pointer-events: none;
         margin-right: 10px;
@@ -279,7 +287,7 @@ section .wave.wave4 {
     
     .navigation a {
         position: relative;
-        right: 10px;
+        right: 0;
         text-decoration: none;
         color: #ffffff;
         padding: 10px 15px;
@@ -392,7 +400,7 @@ section .wave.wave4 {
     
     
     section .wave {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -453,5 +461,8 @@ section .wave.wave4 {
     .fade-in {
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
+    }
+    .spacer {
+        height: 220px; /* Sesuaikan dengan kebutuhan jarak */
     }
 }

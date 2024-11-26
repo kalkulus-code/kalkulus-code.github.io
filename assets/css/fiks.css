@@ -191,6 +191,8 @@ li{
     }
     
     .logo {
+        position: relative;
+        left: 10px;
         color: #000000;
         pointer-events: none;
         margin-right: 10px;
@@ -204,7 +206,7 @@ li{
     
     .navigation a {
         position: relative;
-        right: 10px;
+        right: 0;
         text-decoration: none;
         color: #ffffff;
         padding: 10px 15px;

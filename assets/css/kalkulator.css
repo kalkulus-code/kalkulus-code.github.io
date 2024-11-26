@@ -249,7 +249,12 @@ section .wave.wave4 {
         overflow-x: hidden;
         overflow-y: hidden;
         line-height: 1.5;
+        overflow-y: scroll;
     }
+
+body::-webkit-scrollbar {
+    display: none; 
+}
     
     header {
         position: absolute;
@@ -267,11 +272,11 @@ section .wave.wave4 {
     
     .logo {
         position: relative;
-        left: 5px;
+        left: 10px;
         font-size: 1em;
         color: #000000;
         pointer-events: none;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-bottom: -5px;
     }
     .logo h2 {
@@ -284,13 +289,13 @@ section .wave.wave4 {
         gap: 20px; 
         margin-right: 20px;
         justify-self: start;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     
     
     .navigation a {
         position: relative;
-        right: 5px;
+        right: 0;
         text-decoration: none;
         color: #ffffff;
         padding: 10px 15px;
@@ -311,7 +316,7 @@ section .wave.wave4 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 124vh;
         margin: 0;
         background: linear-gradient(to right, #b0c7e7, #1888dd);
         color: #333;
@@ -328,7 +333,13 @@ section .wave.wave4 {
         margin-bottom: 20PX;
     }
     
+    .judul {
+        position: relative;
+        top: 70px;
+    }
     .calculator {
+        position: relative;
+        top: 70px;
         background: linear-gradient(to right, #60b3f3, #6abcfc);
         color:#333;  
         padding: 20px;
@@ -378,13 +389,14 @@ section .wave.wave4 {
     }
     
     section .wave {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 100px;
         background-image: url(../images/wave.png);
         background-size: 1000px 100px;
+        display: hidden;
     }
     
     section .wave.wave1 {
@@ -393,6 +405,7 @@ section .wave.wave4 {
         opacity: 1;
         animation-delay: 0s;
         bottom: 0;
+        display: hidden;
     }
     
     @keyframes animate {
@@ -410,6 +423,7 @@ section .wave.wave4 {
         opacity: 0.5;
         animation-delay: -5s;
         bottom: 10px;
+        display: hidden;
     }
     
     section .wave.wave3 {
@@ -418,6 +432,7 @@ section .wave.wave4 {
         opacity: 0.2;
         animation-delay: -2s;
         bottom: 15px;
+        display: hidden;
     }
     
     section .wave.wave4 {
@@ -426,18 +441,9 @@ section .wave.wave4 {
         opacity: 0.7;
         animation-delay: -5s;
         bottom: 20px;
+        display: hidden;
     }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    .fade-in {
-        opacity: 0;
-        animation: fadeIn 1s ease-out forwards;
+    .spacer {
+        height: 120px; /* Sesuaikan dengan kebutuhan jarak */
     }
 }
