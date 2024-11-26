@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kalkulator Fungsi Linear</title>
+    <link rel="stylesheet" href="assets/css/kalkulator.css">
+</head>
+<header class="">
+    <section>
+        <div class="logo"><h2>KALKULUS 1</h2></div>
+        <nav class="navigation">
+          <a href="index.html" class="active">HOME</a>
+          <a href="fixmateri.html" class="active">MATERI</a>
+          <a href="about.html" class="active">TEAMS</a>
+        </nav>
+    </section>
+</header>
+
+<body>
+    <h1 class="judul fade-in delay-2">Kalkulator Fungsi Linear</h1> 
+    
+    <div class="calculator fade-in delay-3">
+        <h2>Yuk Ngitungg!!</h2> 
+        
+        <form id="calcForm fade-in delay-4">
+            <label for="m">Masukkan nilai m (gradien):</label>
+            <input type="number" id="m" required><br>
+            
+            <label for="c">Masukkan nilai c (konstanta):</label>
+            <input type="number" id="c" required><br>
+            
+            <label for="x">Masukkan nilai x:</label>
+            <input type="number" id="x" required><br>
+            
+            <button type="button" onclick="hitungFungsi()">Hitung</button>
+        </form>
+        
+        <h3>Hasil: <span id="result">0</span></h3> 
+    </div>
+
+    <script src="assets/js/kalkulator.js"></script>
+    <section>
+        <class="wave">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+        </div>
+    </section>
+</body>
+</html>
