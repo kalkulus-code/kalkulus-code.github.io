@@ -108,7 +108,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    left: 200px;
 }
 
 .banner {
@@ -303,12 +303,16 @@ body::-webkit-scrollbar {
     }
 
     .image-content {
+        position: relative;
+        right: 200px;
         order: -1; /* Move the image content above the text */
         margin-bottom: 20px; /* Add spacing between image and text */
         padding: 130px 20px;
     }
     
     .image-content img {
+        position: relative;
+        right: 200px;
         max-width: 100%; /* Ensure the image fits within the screen */
         width: 100%;
         border-radius: 8px;
