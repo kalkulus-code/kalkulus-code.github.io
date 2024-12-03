@@ -279,6 +279,7 @@ body::-webkit-scrollbar {
     .judul {
         position: relative;
         top: 230px;
+        right: 100px;
         font-size: 1em;
     }
     
@@ -388,7 +389,7 @@ body::-webkit-scrollbar {
         top: 150px;
     }
     .judul{
-        right: 13%;
+        right: 0;
     }
     .box{
         margin: 15px;
